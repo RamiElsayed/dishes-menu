@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS dish_db;
+
+CREATE DATABASE dish_db;
+
+USE dish_db;

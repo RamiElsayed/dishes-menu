@@ -4,6 +4,7 @@
       &#127869 Current Menu
     </h2>
   </div>
+  {{#if dishes.length}}
   {{#each dishes as |dish|}}
     <div class="dish col-md-5">
       <p>
@@ -18,4 +19,9 @@
       </p>
     </div>
   {{/each}}
+  {{else}}
+  <div class="dish col-md-12">
+    You have no dishes
+  </div>
+  {{/if}}
 </div>

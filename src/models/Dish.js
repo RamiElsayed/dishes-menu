@@ -1,7 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Dish extends Model {}
+class Dish extends Model {
+  serialize() {
+    return this.get({ plain: true })
+  }
+}
 
 const schema = {
   id: {

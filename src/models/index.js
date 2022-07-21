@@ -1,3 +1,3 @@
-const Dish = require('./Dish');
+const  Dish = require('./Dish');
 
-module.exports = Dish;
+module.exports = { Dish };
